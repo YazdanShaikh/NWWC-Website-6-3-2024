@@ -1,0 +1,119 @@
+.team-bg {
+	
+	overflow: hidden;
+}
+.team .section-title {
+	padding-bottom: 40px;
+}
+.team .section-title .main-team-subheading {
+	font-size: 14px;
+	font-weight: 500;
+	padding: 0;
+	line-height: 1px;
+	margin: 0 0 5px 0;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	color: #aaaaaa;
+}
+.team .section-title .main-team-subheading::after {
+	content: "";
+	width: 120px;
+	height: 1px;
+	display: inline-block;
+	background: #556270;
+	margin: 4px 10px;
+}
+.team .main-team-heading {
+	margin: 0;
+	font-size: 36px;
+	font-weight: 700;
+	color: #0070cd;
+}
+.team .member {
+	position: relative;
+	padding: 30px;
+	border-radius: 4px;
+	/*background: #f1f1f1;*/
+    /* height: 360px; */
+    margin-bottom: 40px; 
+}
+.team .member .pic {
+	overflow: hidden;
+	width: 140px;
+	border-radius: 4px;
+}
+.team .member img {
+	transition: ease-in-out 0.3s;
+    width: 100%;
+    object-fit: contain;
+    height: 300px;
+}
+.team .member:hover img {
+transform: scale(1.1);
+}
+.team .member .member-heading {
+	font-weight: 700;
+	margin-bottom: 5px;
+	font-size: 20px;
+	color: #000;
+	line-height: 1.2;
+}
+.team .member span {
+	display: block;
+	font-size: 15px;
+	padding-bottom: 10px;
+	position: relative;
+	font-weight: 500;
+    color: #0070cd;
+}
+.team .member span::after {
+	content: '';
+	position: absolute;
+	display: block;
+	width: 50px;
+	height: 2px;
+	background: #0070cf;
+	bottom: 10px;
+	left: 0;
+}
+
+.team .member b{
+    color :grey;
+}
+.team .member .member-para {
+	margin: 10px 0 0 0;
+	font-size: 14px;
+    color: #000;
+}
+.team .member .social {
+	margin-top: 12px;
+	display: flex;
+	align-items: center;
+}
+.team .member .social a {
+	transition: ease-in-out 0.3s;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 4px;
+	width: 32px;
+	height: 32px;
+	background: #8795a4;
+}
+.team .member .social a + a {
+margin-left: 8px;
+}
+.team .member .social a:hover {
+	background: #0070cd;
+}
+.team .member .social a .team-icon {
+	color: #fff;
+	font-size: 16px;
+	margin: 0 2px;
+}
+
+@media (max-width :767px) {
+    .cc-r{
+        flex-direction: column-reverse;
+    }
+}

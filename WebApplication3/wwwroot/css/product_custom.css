@@ -1,0 +1,291 @@
+.product_custom {
+    padding: 40px 0 70px 0;
+}
+
+.product_box h4 {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    margin-bottom: 10px !important;
+    position: relative;
+    color: #0070cd;
+}
+
+.product_box h4::after{
+    position: absolute;
+    content: "";
+    background: #7d7d7d;
+    left: 0;
+    bottom: -4px;
+    height: 2px;
+    width: 100px;
+}
+
+.product_box h5{
+    font-size: 16px;
+    color: #0070cd;
+}
+
+.product_box {
+    /* background: rgb(242 242 242); */
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding: 30px 20px;
+    border-radius: 8px;
+    /* height: 407px; */
+    display: flex;
+    margin: 20px 0;
+    position: relative;
+}
+
+
+.full_view {
+    position: absolute;
+    color: #000;
+    offset: 10px;
+    border-radius: 50%;
+    background: #1d2a4d;
+    top: 10px;
+    right: 10px;
+    padding: 0 !important;
+    width: 33px;
+    height: 33px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.full_view img {
+    width: 20px;
+}
+
+.product_box p {
+    font-size: 12px !important;
+    line-height: 17px;
+}
+.new_para_product{
+    min-height: 110px;
+    margin-bottom: 30px;
+}
+
+@media (max-width: 991px) {
+    .product_box p{
+        height: auto;
+    }
+}
+
+.related_product {
+    display: flex;
+    align-items: center;
+}
+
+.related_product img{
+    transition: 0.3s all ease-in-out;
+    filter: grayscale(100%);
+}
+
+.related_product img:hover{
+    transform: scale(1.1);
+    filter: grayscale(0%);
+}
+
+.button_model {
+    background: #1d2a4d;
+    width: 33px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 33px;
+    border-radius: 50%;
+}
+
+.button_model button {
+    border: none !important;
+    background: none !important;
+    padding: none !important;
+    outline: none !important;
+    border: none !important;
+}
+
+.none-class {
+    display: none;
+}
+
+.custom_view_model1 .model-dialog {
+    max-width: 80% !important;
+}
+
+@media (max-width: 991px) {
+    .product_box h4 {
+        font-size: 18px;
+    }
+    .product_box p {
+        font-size: 10px !important;
+    }
+}
+
+@media(max-width: 767px) {
+    .product_box {
+        height: auto;
+    }
+    .product_box h4 {
+        font-size: 24px;
+        margin-bottom: 20px !important;
+    }
+    .product_box p {
+        font-size: 13px !important;
+    }
+    .main-img {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .main-img img {
+        width: 60%;
+    }
+}
+
+@media(max-width: 576px) {
+    .custom-project-page h2 {
+        font-size: 26px !important;
+    }
+    .product_box h4 {
+        font-size: 20px;
+        line-height: 25px !important;
+        margin-bottom: 10px !important;
+    }
+    .product_box p {
+        font-size: 10px !important;
+    }
+    .product_box h5 {
+        font-size: 15px;
+    }
+}
+
+
+
+
+
+
+.moretext {
+    display: none;
+}
+
+.moreless-button{
+    cursor: pointer;
+    font-size: 13px;
+    color: grey;
+}
+
+.moretext2{
+    display: none;
+}
+
+.moreless-button2{
+    cursor: pointer;
+    font-size: 13px;
+    color: grey;
+}
+
+
+
+.moretext3{
+    display: none;
+}
+
+.moreless-button3{
+    cursor: pointer;
+    font-size: 13px;
+    color: grey;
+}
+
+
+.moretext4{
+    display: none;
+}
+
+.moreless-button4{
+    cursor: pointer;
+    font-size: 13px;
+    color: grey;
+}
+
+
+
+
+
+.moretext5{
+    display: none;
+}
+
+.moreless-button5{
+    cursor: pointer;
+    font-size: 13px;
+    color: grey;
+}
+
+
+
+.moretext6{
+    display: none;
+}
+
+.moreless-button6{
+    cursor: pointer;
+    font-size: 13px;
+    color: grey;
+}
+
+
+.moretext7{
+    display: none;
+}
+
+.moreless-button7{
+    cursor: pointer;
+    font-size: 13px;
+    color: grey;
+}
+
+
+.moretext8{
+    display: none;
+}
+
+.moreless-button8{
+    cursor: pointer;
+    font-size: 13px;
+    color: grey;
+}
+
+
+
+.moretext9{
+    display: none;
+}
+
+.moreless-button9{
+    cursor: pointer;
+    font-size: 13px;
+    color: grey;
+}
+
+
+
+.moretext10{
+    display: none;
+}
+
+.moreless-button10{
+    cursor: pointer;
+    font-size: 13px;
+    color: grey;
+}
+
+
+
+.product_box .main-img img{
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+}

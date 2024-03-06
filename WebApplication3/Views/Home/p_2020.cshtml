@@ -1,0 +1,102 @@
+﻿
+
+<link rel="stylesheet" type="text/css" href="css/career.css" />
+<link rel="stylesheet" type="text/css" href="css/our-porjects.css" />
+<link rel="stylesheet" type="text/css" href="css/project.css" />
+<script>
+    document.title = '2020 Porjects || NWWC - National Water Works CO';
+</script>
+<div class="blue-pattern">
+
+    <!-- page-title -->
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-11">
+                <div class="ttm-page-title-row ttm-bg ttm-bgimage-yes ttm-bgcolor-darkgrey clearfix custom-project-banner">
+                    <div class="ttm-row-wrapper-bg-layer ttm-bg-layer" style="border-radius: 7px;"></div>
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <div class="col-lg-12">
+                                <div class="ttm-page-title-row-inner">
+                                    <div class="page-title-heading">
+                                        <h4 class="title lang" key="meinheading2020">Our 2020 Projects</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- page-title end -->
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+    <div class="custom-card-design">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-11">
+                    <div class="row">
+                        <div class="col-md-6 my-3">
+                            <div class="custom_card">
+                                <!-- Swiper -->
+                                <div class="swiper project-swiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide"><img class="img-fluid" src="images/projects/20/1.jpg" alt=""></div>
+                                        <div class="swiper-slide"><img class="img-fluid" src="images/projects/20/2.jpg" alt=""></div>
+                                    </div>
+                                    <div class="swiper-button-next"><i class="bi bi-arrow-right-short"></i></div>
+                                    <div class="swiper-button-prev"><i class="bi bi-arrow-left-short"></i></div>
+                                </div>
+                                <div class="alignment_solve custom_text">
+                                    <h4 class="lang" key="p_2020_head1">Implementation of raising the capacity of Al-Khumra plant 4 and Al-Khumra plant 3 in Jeddah</h4>
+                                    <p class="lang" key="p_2020_des1">Supply , Installation 6 submersible pumps to pump the excess sludge include electrical panels, valves and connecting the pumps to the central SCADA system and all that is necessary 6 Decanter With all the necessary electrical panels and laying cables for washing pumps and polymer pumps. Construction of a metal hangar with an area of 36 m × 24 m × 7 m</p>
+                                    <p class="mb-2 lang" key="p_2020_des2"><b>Project Type: </b>Water Treatment Applications</p>
+                                    <p class="mb-2 lang" key="p_2020_des3"><b>Year: </b>2020</p>
+                                    <p class="mb-2 lang" key="p_2020_des4"><b>Location: </b>Jeddah</p>
+                                    <p class="mb-2 lang" key="p_2020_des5"><b>Capacity: </b>250,000 -300,000 M3/day (al Khomra Plant 4), 140,000 -190,000 M3/day (al Khomra Plant 3)</p>
+                                    <p class="mb-2 lang" key="p_2020_des6"><b>Client: </b>NWC</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+
+<script>
+    var projectSwiper = new Swiper(".project-swiper", {
+        spaceBetween: 30,
+        centeredSlides: true,
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+    });
+</script>
+
+
+
+
+
+<script src="js/jquery.js"></script>
+<script>
+    $(window).on("scroll", function () {
+        if (matchMedia('only screen and (min-width: 1200px)').matches) {
+            if ($(window).scrollTop() >= 50) {
+
+                $('.ttm-stickable-header').addClass('fixed-header');
+            } else {
+
+                $('.ttm-stickable-header').removeClass('fixed-header');
+            }
+        }
+    });
+</script>

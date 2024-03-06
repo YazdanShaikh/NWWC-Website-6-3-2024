@@ -1,0 +1,589 @@
+.career input{
+    background: #fff;
+}
+
+.custom-career{
+    margin-top: 78px;
+    border-radius: 5px;
+}
+
+.career textarea{
+    background: #fff;
+}
+
+.career select{
+    background: #fff !important;
+}
+
+.custom-contact{
+    background:linear-gradient(to right, rgb(0, 0, 0, 0.7), rgb(0, 0, 0, 0.7)), url(../images/contacts.jpg) no-repeat !important;
+    background-size: cover !important;
+    margin-top: 78px;
+    border-radius: 7px;
+    background-position: right !important;
+}
+
+
+
+
+.custom-contact h2{
+    color: #fff !important;
+}
+
+.contact h3{
+    color: #0070cd;
+}
+
+.custom-contact-icon{
+    color: #0070cd !important;
+}
+
+.custom-invest-banner{
+    background: url(../images/company.jpg) no-repeat !important;
+    background-size: cover !important;
+    margin-top: 77px;
+    border-radius: 7px;
+}
+
+.custom-who-banner{
+    background: url(../images/who-we-are.png) no-repeat !important;
+    background-size: cover !important;
+    margin-top: 77px;
+    border-radius: 7px;
+    background-position: center !important;
+}
+
+
+.custom-company-banner{
+    background: url(../images/4img.png) no-repeat !important;
+    background-size: cover !important;
+    margin-top: 77px;
+    border-radius: 7px;
+}
+
+.custom-history-banner{
+    background: url(../images/new_history_ban.JPG) no-repeat !important;
+    background-size: cover !important;
+    margin-top: 77px;
+    border-radius: 7px;
+    background-position: top !important;
+}
+
+.custom-team-banner{
+    background: url(../images/team.jpg) no-repeat !important;
+    background-size: cover !important;
+    margin-top: 77px;
+    border-radius: 7px;
+    background-position: center !important;
+}
+
+.custom-what-banner{
+    background: url(../images/wwd.jpg) no-repeat !important;
+    background-size: cover !important;
+    margin-top: 77px;
+    border-radius: 7px;
+    background-position: center !important;
+}
+
+.custom-parent-banner{
+    background: url(../images/map.jpg) no-repeat !important;
+    background-size: cover !important;
+    margin-top: 77px;
+    border-radius: 7px;
+    background-position: center !important;
+}
+
+.custom-app-banner{
+    background: url(../images/partner.jpg) no-repeat !important;
+    background-size: cover !important;
+    margin-top: 77px;
+    border-radius: 7px;
+    background-position: center !important;
+}
+
+.custom-project-banner{
+    background: url(../images/projects.jpg) no-repeat !important;
+    background-size: cover !important;
+    margin-top: 77px;
+    border-radius: 7px;
+    background-position: bottom !important;
+}
+
+.custom-blog-banner{
+    background: url(../images/bg-blog.png) no-repeat !important;
+    background-size: cover !important;
+    margin-top: 77px;
+    border-radius: 7px;
+    background-position: center !important;
+}
+
+.custom-product-banner{
+    background: url(../images/product-bg.jpg) no-repeat !important;
+    background-size: cover !important;
+    margin-top: 77px;
+    border-radius: 7px;
+    background-position: center !important;
+}
+
+.custom-event-banner{
+    background: url(../images/new_ban_img.jpg) no-repeat !important;
+    background-size: cover !important;
+    margin-top: 77px;
+    border-radius: 7px;
+    background-position: center !important;
+}
+
+.custom-acti-banner{
+    background: url(../images/riyadh.jpg) no-repeat !important;
+    background-size: cover !important;
+    margin-top: 77px;
+    border-radius: 7px;
+    background-position: center !important;
+}
+
+.custom-app-banner{
+    background: url(../images/app.png) no-repeat !important;
+    background-size: cover !important;
+    margin-top: 77px;
+    border-radius: 7px;
+    background-position: center !important;
+}
+
+.custom-s-banner{
+    background: url(../images/12.jpg) no-repeat !important;
+    background-size: cover !important;
+    margin-top: 77px;
+    border-radius: 7px;
+    background-position: top !important;
+}
+
+.custom-location-banner{
+    background: url(../images/location.jpeg) no-repeat !important;
+    background-size: cover !important;
+    margin-top: 77px;
+    border-radius: 7px;
+    background-position: top !important;
+}
+
+.custom-privacy-banner{
+    background: url(../images/policy.webp) no-repeat !important;
+    background-size: cover !important;
+    margin-top: 77px;
+    border-radius: 7px;
+    background-position: center !important;
+}
+
+.our-company{
+    margin: 40px 0;
+    color: #000 ;
+}
+
+.our-company h2{
+    font-weight: 500 !important;
+    font-size: 40px !important;
+    line-height: 43px !important;
+}
+
+.our-speciality{
+    /*background: #f8f8f8;*/
+    padding: 0px 30px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px ;
+    border-radius: 5px;
+    height: 250px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.al-mousa{
+    /*background: #f8f8f8;*/
+    padding: 20px 30px;
+    border-radius: 5px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px; 
+    height: 250px;
+    width: 100%;
+    display: flex;
+    /* align-items: center; */
+    position: relative;
+}
+
+@media (max-width: 575px) {
+    .al-mousa,
+    .our-speciality{
+        height: auto;
+        padding: 30px 10px;
+    }
+}
+
+.our-speciality::after,
+.al-mousa::after{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 3px;
+    content: "";
+    background: #0070cd;
+}
+
+.our-speciality h4{
+    color: #0070cd;
+    font-size: 23px;
+}
+
+.our-speciality p{
+    line-height: 20px;
+    margin-bottom: 0 !important;
+}
+
+
+.al-mousa h4{
+    color: #0070cd;
+    font-size: 23px;
+    margin-bottom: 0 !important;
+}
+
+.custom-bg img{
+    width: 100%;
+    height: 263px;
+    object-fit: cover;
+    border-radius: 7px
+}
+
+.custom-up-img{
+    display: flex;
+    z-index: 10000;
+}
+
+@media (max-width: 575px) {
+    .custom-up-img{
+        height: auto !important;
+        margin-right: 0px;
+    }
+}
+
+.custom-auto{
+    color: #000;
+    padding-top: 50px !important;
+}
+
+.event-detail{
+    text-align: center;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.custom_mission_view h4{
+    margin-top: 50px;
+    color: #0070cd;
+    font-size: 23px;
+}
+
+.custom_mission_view h5{
+    margin-top: 18px;
+    color: #0070cd;
+    font-size: 17px;
+    margin-bottom: 0 !important;
+}
+
+.custom_mission_view h4{
+    margin-top: 50px;
+    color: #0070cd;
+}
+
+.custom_mission_view ul{
+    padding-left: 0 !important;
+    color: #000;
+    list-style: none;
+}
+
+.custom_mission_view ul li{
+    font-size: 13px;
+    color: #ffffff !important;
+}
+
+.custom_mission_view p{
+    font-size: 13px;
+}
+
+.al-mousa img{
+    width: 200px;
+    display: inline-block;
+}
+
+
+@media (max-width: 1200px) {
+    .custom-contact,
+    .custom-career,
+    .our-company,
+    .custom-project-banner,
+    .custom-app-banner,
+    .custom-parent-banner,
+    .custom-what-banner,
+    .custom-team-banner,
+    .custom-blog-banner,
+    .custom-event-banner,
+    .custom-acti-banner,
+    .custom-who-banner,
+    .custom-s-banner,
+    .custom-privacy-banner{
+        margin-top: 0px !important;
+    }
+}
+
+.custom_mission_view p{
+    line-height: 18px;
+    
+}
+
+.boxaccordion p{
+    color: #e9e9e9 !important;
+}
+
+.custom-top-border{
+    border-top: 3px solid #ebebeb;
+}
+
+.border-top-solid{
+    border-top: 2px solid #ebebeb;
+    margin-top: 20px;
+    padding-top: 30px !important;
+}
+
+.mission_box{
+    /*background: #f2f2f2;*/
+    padding: 20px 30px;
+    border-radius: 5px;
+    height: 200px;
+    width: 100%;
+    display: flex;
+    
+    /* align-items: center; */
+    position: relative; 
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    /*box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px */
+}
+
+.mission_box1{
+    background: linear-gradient(to right, rgb(0, 0, 0, 0.7), rgb(0, 0, 0, 0.7)), url(../images/11.jpg) no-repeat center;
+}
+
+.mission_box::after{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 4px;
+    content: "";
+    background: #0070cd;
+}
+
+.mission_box p{
+    text-align: start;
+}
+
+.inline-li{
+    /* display: flex; */
+    /* align-items: center; */
+    margin-bottom: 20px;
+}
+
+.inline-li h5{
+    margin-top: 0 !important;
+    margin-right: 10px;
+    font-size: 14px;
+    display: inline-block;
+    color: #fff;
+    position: relative;
+}
+
+.inline-li h5::after{
+    position: absolute;
+    content: "";
+    background: #0070cd;
+    width: 50%;
+    height: 2px;
+    left: 0;
+    bottom: 3px;
+    border-radius: 5px;
+}
+
+.inline-li li{
+    font-family: 'Montserrat', sans-serif !important;
+    color: #747474 !important;
+    line-height: 17px;
+    /* display: contents; */
+}
+
+
+
+.our-company p{
+    /*color: #bbbbbb !important;*/
+    line-height: 18px;
+}
+
+.our-company .layer-content{
+    height: auto !important;
+}
+
+.custom-auto{
+    /* border-top: 2px solid #e4e4e4;  */
+    /* margin-top: 70px !important; */
+}
+
+.custom-content-blog h3{
+    font-size: 22px !important;
+    font-weight: 500 !important;
+}
+
+.custom-content-blog p{
+    line-height :18px ;
+}
+
+.custom-content-blog .btn-inline{
+    color: #0070cd;
+}
+
+.custom-content-blog .ttm-entry-date{
+    background: #0070cd !important;
+}
+
+.custom-content-blog .current{
+    background: #0070cd !important;
+}
+
+.custom-content-blog .page-numbers:hover{
+    background: #0070cd !important;
+}
+
+.custom-content-blog .sidebar .widget-area .with-title{
+    background-color: #eff3ff !important;
+}
+
+.custom-content-blog .blue_bg{
+    background-color: #0070cd !important;
+    border-color: #0070cd;
+}
+
+.have-title{
+    color: #000 !important;
+    display: initial;
+    padding-left: 10px;
+    position: relative;
+}
+
+.have-title::before{
+    position: absolute;
+    background: #0070cd;
+    left: 0;
+    top: 0;
+    content: "";
+    height: 100%;
+    width: 3px;
+}
+
+.our-sectors{
+    padding-top: 50px;
+}
+
+.train{
+    border-top: 2px solid #dedede;
+    margin-top: 40px;
+    padding: 15px 0;
+}
+
+.train h3{
+    font-family: 'Montserrat', sans-serif !important;
+    margin-bottom: 0px !important;
+    font-size: 24px;
+}
+
+.custommySwiper img{
+    border-radius: 10px;
+}
+
+.custommySwiper .swiper-button-next,
+.custommySwiper .swiper-button-prev{
+    background: #0070cd !important;
+    width: 35px !important;
+    height: 35px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px; 
+}
+
+
+.custommySwiper .swiper-button-next::after,
+.custommySwiper .swiper-button-prev::after{
+    font-size: 16px;
+}
+
+.cermySwiper .swiper-slide{
+    height: 340px;
+    width: 100%;
+}
+
+.Certificates{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 10px;
+}
+
+.cermySwiper .swiper-slide img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    border-radius :7px;
+}
+
+.cermySwiper .swiper-button-next,
+.cermySwiper .swiper-button-prev{
+    background: #0070cd !important;
+    width: 35px !important;
+    height: 35px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px; 
+}
+
+
+.cermySwiper .swiper-button-next::after,
+.cermySwiper .swiper-button-prev::after{
+    font-size: 16px;
+}
+
+
+
+.our-application li{
+    font-size: 13px;
+}
+
+
+.custom-grey .grey-underline::after{
+    width: 30px !important;
+}
+
+.submit:hover{
+    background: #0070cd !important;
+}
+
+.who-shadow{
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        height: 200px;
+        padding :10px;
+        border-radius :7px;
+        background: #ffffff5e;
+}
+.who-shadow p{
+    color: #e6e6e6 !important;
+}
+
+
+
+.new_partners_logo{
+    width: 100px;
+}

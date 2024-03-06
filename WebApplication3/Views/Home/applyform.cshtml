@@ -1,0 +1,235 @@
+﻿@model WebApplication3.Models.applyform;
+
+<link rel="stylesheet" type="text/css" href="css/career.css" />
+
+
+<script>
+    document.title = 'Apply || NWWC - National Water Works CO';
+</script>
+<div class="blue-pattern"> 
+    <div class="container"> 
+        <div class="row justify-content-center">
+            <div class="col-md-11">
+                <div class="ttm-page-title-row ttm-bg ttm-bgimage-yes ttm-bgcolor-darkgrey clearfix custom-career">
+                    <div class="ttm-row-wrapper-bg-layer ttm-bg-layer" style="border-radius: 8px;"> </div>
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <div class="col-lg-12">
+                                <div class="ttm-page-title-row-inner">
+                                    <div class="page-title-heading">
+                                        <h4 class="title lang" key="apply">Apply</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="site-main">
+        <section class="pb-5 mb-5 conatct-section ttm-bgcolor-grey clearfix">
+            <div class="container career">
+                <div class="row justify-content-center">
+                    <div class="col-md-11">
+                        <div class="row align-items-center">
+                            <div class="col-lg-12">
+                                <div class="ttm-bgcolor-white p-20 padding_top35 border-rad_5 margin_top15" style="background: #f7f7f7 !important;">
+                                    <h4 class="lang" key="apply_form"></h4>
+                                    <form asp-action="applyform">
+                                        <div class="alignment_solve row">
+                                            <div class="col-md-4 mb-3">
+                                                <label class="lang" key="fname">First Name*</label>
+                                                <span class="text-input"><input asp-for="namef" type="text" value="" class="lang" key="fname" required="required"></span>
+                                            </div>
+                                            <div class="col-md-4 mb-3">
+                                                <label class="lang" key="sname">Second Name*</label>
+                                                <span class="text-input"><input asp-for="names" type="text" value="" required="required"></span>
+                                            </div>
+                                            <div class="col-md-4 mb-3">
+                                                <label class="lang" key="lname">Last Name*</label>
+                                                <span class="text-input"><input asp-for="namel" type="text" value=""required="required"></span>
+                                            </div>
+                                            <div class="col-md-12 mb-3">
+                                                <label class="lang" key="selectjob">Job Name*</label>
+                                                <span class="text-input"><input asp-for="selectjob" type="text" value="" required="required"></span>
+                                            </div>
+                                            <div class="col-md-12 mb-3">
+                                                <label class="lang" key="gender">Gender*</label>
+                                                <select asp-for="gender" style="background: #eff3ff; border: none !important; border-radius:5px !important;">
+                                                    <option value="Male">Male</option>
+                                                    <option value="Female">Female</option>
+                                                    <option value="Other">Other</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-md-4 mb-3">
+                                                <label class="lang" key="aemail">Your Email*</label>
+                                                <span class="text-input"><input asp-for="address" type="text" value="" required="required"></span>
+                                            </div>
+                                            <div class="col-md-4 mb-3">
+                                                <label class="lang" key="aphone">Phone Number*</label>
+                                                <span class="text-input"><input asp-for="phone" type="text" value="" required="required"></span>
+                                            </div>
+                                            <div class="col-md-4 mb-3">
+                                                <label class="lang" key="city">City*</label>
+                                                <span class="text-input"><input asp-for="city" type="text" value="" required="required"></span>
+                                            </div>
+                                            <div class="col-md-12 mb-3">
+                                                <label class="lang" key="select_nationality">Select Nationality*</label>
+                                                <select asp-for="nationality" style="background: #eff3ff; border: none !important; border-radius:5px !important;" id="CphMain_ddlNationality">
+                                                    <option value="aruba"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Aruba</font></font></option>
+                                                    <option value="ethiopia"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Ethiopia</font></font></option>
+                                                    <option value="azerbaijan"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Azerbaijan</font></font></option>
+                                                    <option value="armenia"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Armenia</font></font></option>
+                                                    <option value="eritrea"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Eritrea</font></font></option>
+                                                    <option value="spain"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Spain</font></font></option>
+                                                    <option value="australia"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Australia</font></font></option>
+                                                    <option value="estonia"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Estonia</font></font></option>
+                                                    <option value="scotland"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Scotland</font></font></option>
+                                                    <option value="afghanistan"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Afghanistan</font></font></option>
+                                                    <option value="palestine"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Palestine</font></font></option>
+                                                    <option value="argentina"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Argentina</font></font></option>
+                                                    <option value="jordan"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Jordan</font></font></option>
+                                                    <option value="ecuador"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Ecuador</font></font></option>
+                                                    <option value="uae"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">The United Arab Emirates</font></font></option>
+                                                    <option value="albania"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Albania</font></font></option>
+                                                    <option value="bahamas"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Bahamas</font></font></option>
+                                                    <option value="seas"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">the two seas</font></font></option>
+                                                    <option value="brazil"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Brazil</font></font></option>
+                                                    <option value="portugal"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Portugal</font></font></option>
+                                                    <option value="herzegovina"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Bosnia and Herzegovina</font></font></option>
+                                                    <option value="gabon"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Gabon</font></font></option>
+                                                    <option value="mountain"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">the black Mountain</font></font></option>
+                                                    <option value="algeria"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Algeria</font></font></option>
+                                                    <option value="denmark"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Denmark</font></font></option>
+                                                    <option value="greenhead"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">green head</font></font></option>
+                                                    <option value="salvador"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">El Salvador</font></font></option>
+                                                    <option value="senegal"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Senegal</font></font></option>
+                                                    <option value="sudan"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Sudan</font></font></option>
+                                                    <option value="sweden"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Sweden</font></font></option>
+                                                    <option value="somalia"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Somalia</font></font></option>
+                                                    <option value="china"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">China</font></font></option>
+                                                    <option value="iraq"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Iraq</font></font></option>
+                                                    <option value="vatican"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Vatican</font></font></option>
+                                                    <option value="philippines"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">The Philippines</font></font></option>
+                                                    <option value="cameroon"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Cameroon</font></font></option>
+                                                    <option value="brazzaville"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Congo - Brazzaville</font></font></option>
+                                                    <option value="kinshasa"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Congo - Kinshasa</font></font></option>
+                                                    <option value="kuwait"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Kuwait</font></font></option>
+                                                    <option value="germany"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Germany</font></font></option>
+                                                    <option value="northkorea"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">north korea</font></font></option>
+                                                    <option value="costa"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Costa Rica</font></font></option>
+                                                    <option value="Kosovo"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Kosovo</font></font></option>
+                                                    <option value="Colombia"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Colombia</font></font></option>
+                                                    <option value="Kiribati"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Kiribati</font></font></option>
+                                                    <option value="Kenya"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Kenya</font></font></option>
+                                                    <option value="Latvia"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Latvia</font></font></option>
+                                                    <option value="Laos"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Laos</font></font></option>
+                                                    <option value="Lebanon"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Lebanon</font></font></option>
+                                                    <option value="Luxembourg"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Luxembourg</font></font></option>
+                                                    <option value="Libya"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Libya</font></font></option>
+                                                    <option value="Liberia"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Liberia</font></font></option>
+                                                    <option value="Lithuania"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Lithuania</font></font></option>
+                                                    <option value="Malta"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Malta</font></font></option>
+                                                    <option value="Financial"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Financial</font></font></option>
+                                                    <option value="Malaysia"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Malaysia</font></font></option>
+                                                    <option value="Madagascar"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Madagascar</font></font></option>
+                                                    <option value="Egypt"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Egypt</font></font></option>
+                                                    <option value="Macedonia"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Macedonia</font></font></option>
+                                                    <option value="Malawi"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Malawi</font></font></option>
+                                                    <option value="Mongolia"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Mongolia</font></font></option>
+                                                    <option value="Mauritania"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Mauritania</font></font></option>
+                                                    <option value="Mauritius"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Mauritius</font></font></option>
+                                                    <option value="Mozambique"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Mozambique</font></font></option>
+                                                    <option value="Moldavia"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Moldavia</font></font></option>
+                                                    <option value="Monaco"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Monaco</font></font></option>
+                                                    <option value="Myanmar - Burma"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Myanmar - Burma</font></font></option>
+                                                    <option value="Namibia"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Namibia</font></font></option>
+                                                    <option value="Nepal"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Nepal</font></font></option>
+                                                    <option value="Nigeria"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Nigeria</font></font></option>
+                                                    <option value="Nicaragua"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Nicaragua</font></font></option>
+                                                    <option value="New Zealand"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">New Zealand</font></font></option>
+                                                    <option value="Haiti"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Haiti</font></font></option>
+                                                    <option value="Honduras"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Honduras</font></font></option>
+                                                    <option value="Hungary"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Hungary</font></font></option>
+                                                    <option value="Holland"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Holland</font></font></option>
+                                                    <option value="Yugoslavia"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Yugoslavia</font></font></option>
+                                                    <option value="Turkestan"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Turkestan</font></font></option>
+                                                </select>
+                                            </div>
+
+                                            <div class="col-md-4 mb-3">
+                                                <label class="lang" key="specialization">Specialization*</label>
+                                                <span class="text-input"><input asp-for="specialization" type="text" value="" required="required"></span>
+                                            </div>
+                                            <div class="col-md-4 mb-3">
+                                                <label class="lang" key="appreciation">Appreciation*</label>
+                                                <span class="text-input"><input asp-for="appreciation" type="text" value="" required="required"></span>
+                                            </div>
+                                            <div class="col-md-4 mb-3">
+                                                <label class="lang" key="graduation_year">Graduation Year*</label>
+                                                <span class="text-input"><input asp-for="graduation" type="text" value="" required="required"></span>
+                                            </div>
+                                            <div class="col-md-12 mb-3">
+                                                <label class="lang" key="education">Select Education*</label>
+                                                <select asp-for="education" id="CphMain_ddlDegree" style="background: #eff3ff; border: none !important; border-radius:5px !important;">
+                                                    <option value="Primary education"><font style="vertical-align: inherit;"><font class="lang" key="primary_education" style="vertical-align: inherit;">Primary education</font></font></option>
+                                                    <option value="Secondary education or high school"><font style="vertical-align: inherit;"><font class="lang" key="secondary_education" style="vertical-align: inherit;">Secondary education or high school</font></font></option>
+                                                    <option value="Bachelors degree"><font style="vertical-align: inherit;"><font class="lang" key="bachelors_degree" style="vertical-align: inherit;">Bachelors degree</font></font></option>
+                                                    <option value="Masters degree"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;" class="lang" key="masters_degree">Masters degree</font></font></option>
+                                                    <option value="Doctorate or higher"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;" class="lang" key="doctorate_higher">Doctorate or higher</font></font></option>
+                                                </select>
+                                            </div>
+                                            <div class="col-md-4 mb-3">
+                                                <label class="lang" key="job_title">Job Title*</label>
+                                                <span class="text-input"><input asp-for="jobtitle" type="text" value="" required="required"></span>
+                                            </div>
+                                            <div class="col-md-4 mb-3">
+                                                <label class="lang" key="years_of_experience">Years of Experience*</label>
+                                                <span class="text-input"><input asp-for="experience" type="text" value="" required="required"></span>
+                                            </div>
+                                            <div class="col-md-4 mb-3">
+                                                <label class="lang" key="current_salary">Current Salary*</label>
+                                                <span class="text-input"><input asp-for="currentsalary" type="text" value="" required="required"></span>
+                                            </div>
+                                            <div class="col-lg-12 mb-3">
+                                                <label class="lang" key="message">Message*</label>
+                                                <span class="text-input"><textarea asp-for="message" rows="5" required="required"></textarea></span>
+                                            </div>
+                                            <div class="col-lg-12 mb-3">
+                                                <div style="overflow: hidden;" class="res-767-margin_top30 margin_bottom0 res-991-margin_bottom0" data-animation="fadeInUp" data-delay="1.4">
+                                                    <button type="submit" key="Submit" style="background: #0070cd !important; border-color: #0070cd;" class="lang drop-in px-3 py-2 ttm-btn ttm-btn-size-md ttm-btn-style-fill ttm-btn-shape-rounded ttm-btn-color-dark">Submit</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- conatct-section end -->
+
+
+    </div><!--site-main end-->
+</div>
+
+
+<script src="js/jquery.js"></script>
+<script>
+    $(window).on("scroll", function () {
+        if (matchMedia('only screen and (min-width: 1200px)').matches) {
+            if ($(window).scrollTop() >= 50) {
+
+                $('.ttm-stickable-header').addClass('fixed-header');
+            } else {
+
+                $('.ttm-stickable-header').removeClass('fixed-header');
+            }
+        }
+    });
+
+    $('#career').addClass('header-mennu-active');
+</script>

@@ -1,0 +1,136 @@
+﻿@{
+    ViewData["Title"] = "Team Page";
+}
+
+<script>
+    document.title = 'Team|| NWWC - National Water Works CO';
+</script>
+
+
+<link rel="stylesheet" type="text/css" href="css/o-team.css" />
+
+
+<div class="blue-pattern">
+    <!-- page-title -->
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-11">
+                <div class="ttm-page-title-row ttm-bg ttm-bgimage-yes ttm-bgcolor-darkgrey clearfix custom-team-banner">
+                    <div class="ttm-row-wrapper-bg-layer ttm-bg-layer" style="border-radius: 7px;"></div>
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <div class="col-lg-12">
+                                <div class="ttm-page-title-row-inner">
+                                    <div class="page-title-heading">
+                                        <h4 class="title lang" key="team_managment">Executive Management</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- page-title end -->
+
+
+
+
+    <div class="container my-5 pb-5 team-laptop">
+        <div class="row justify-content-center">
+            <div class="col-md-11">
+                <div class="row">
+                    <!-- Single Starts  -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="line1">
+                            <div class="team__item set-bg " style="background: linear-gradient(to right, rgb(0, 0, 0, 0.2), rgb(0, 0, 0, 0.2)), url('images/chariman.jpeg');">
+                                <div class="alignment_solve team__text">
+                                    <div class="alignment_solve team__title">
+                                        <h4 key="team_team1_head" class="alignment_solve lang">Dr. Nasser A. El Mousa</h4>
+                                        <span key="team_team1_tagline" class="alignment_solve lang">Chariman of the Board</span>
+                                    </div>
+                                    <p key="team_team1_des" class="alignment_solve lang">“Allah’s biggest grace in this life is “Water,” as Allah says in Quran, “We created from water every living thing,” (Al’anbiya-Verse 30). Water is our most precious resource.</p>
+                                    <a href="team1" target="_blank" key="team_see" class="alignment_solve lang text-light">See More</a>
+                                    <div class="team__social">
+                                        <a href="#"><i class="fa fa-brands fa-linkedin"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-md-6"></div>
+                    <!-- Single Ends    -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="line2">
+                            <div class="team__item set-bg" style="background:linear-gradient(to right, rgb(0, 0, 0, 0.2), rgb(0, 0, 0, 0.2)), url('images/new_kareem.jpg');">
+                                <div class="alignment_solve team__text">
+                                    <div class="alignment_solve team__title">
+                                        <h4 key="team_team2_head" class="alignment_solve lang">Eng. Abdul-Kareem A. El Mousa</h4>
+                                        <span key="team_team2_tagline" class="alignment_solve lang">Vice Chairman & Board Member</span>
+                                    </div>
+                                    <p key="team_team2_des" class="alignment_solve lang">The Kingdom of Saudi Arabia has large and different topography, which requires serious and special water solutions to extract water, deliver it, and distribute it up to the best efficiency with the least possible cost.</p>
+                                    <a href="team2" target="_blank" key="team_see" class="alignment_solve lang text-light">See More</a>
+                                    <div class="team__social">
+                                        <a href="#"><i class="fa fa-brands fa-linkedin"></i></a>
+                                        <!--<a href="#"><i class="fa fa-twitter"></i></a>-->
+                                        <!--<a href="#"><i class="fa fa-instagram"></i></a>-->
+                                        <!--<a href="#"><i class="fa fa-facebook"></i></a>-->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-md-6"></div>
+                    <div class="col-lg-4 col-md-6"></div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="team__item set-bg" style="background:linear-gradient(to right, rgb(0, 0, 0, 0.2), rgb(0, 0, 0, 0.2)), url('images/ceo.jpeg');">
+                            <div class="alignment_solve team__text">
+                                <div class="alignment_solve team__title">
+                                    <h4 key="team_team3_head" class="alignment_solve lang">Eng. Essam M. Zahra</h4>
+                                    <span key="team_team3_tagline" class="alignment_solve lang">Chief Executive Officer & Board Member</span>
+                                </div>
+                                <p key="team_team3_des" class="alignment_solve lang">The story of water is as long as the foundations of the earth. The Kingdom of Saudi Arabia needs water solutions that a both efficient and low energy. </p>
+                                <a href="team3" target="_blank" key="team_see" class="alignment_solve lang text-light">See More</a>
+                                <div class="team__social">
+                                    <a target="_blank" href="https://www.linkedin.com/in/essam-zahra-b6182119b"><i class="fa fa-brands fa-linkedin"></i></a>
+                                    <!--<a href="#"><i class="fa fa-twitter"></i></a>-->
+                                    <!--<a href="#"><i class="fa fa-instagram"></i></a>-->
+                                    <!--<a href="#"><i class="fa fa-facebook"></i></a>-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+</div>
+
+<script src="js/jquery.js"></script>
+<script>
+    $(window).on("scroll", function () {
+        if (matchMedia('only screen and (min-width: 1200px)').matches) {
+            if ($(window).scrollTop() >= 50) {
+
+                $('.ttm-stickable-header').addClass('fixed-header');
+            } else {
+
+                $('.ttm-stickable-header').removeClass('fixed-header');
+            }
+        }
+    });
+
+    $('#about').addClass('header-mennu-active');
+</script>

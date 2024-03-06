@@ -1,0 +1,170 @@
+﻿@model WebApplication3.Models.Contact;
+<link rel="stylesheet" type="text/css" href="css/career.css" />
+
+
+<div class="blue-pattern">
+    <!-- page-title -->
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-11">
+                <div class=" ttm-bg ttm-bgimage-yes clearfix custom-contact">
+                    <div class="ttm-row-wrapper-bg-layer ttm-bg-layer"></div>
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <div class="col-lg-12">
+                                <div class="ttm-page-title-row-inner">
+                                    <div class="page-title-heading">
+                                        <h3 class="text-light title lang" key="contact_us">Contact us</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- page-title end -->
+    <!--site-main start-->
+    <div class="site-main">
+
+
+        <!-- conatct-section -->
+        <section class="py-5 conatct-section ttm-bgcolor-grey clearfix">
+            <div class="container contact">
+                <div class="row justify-content-center">
+                    <div class="col-md-11">
+                        <!-- row -->
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <!-- section-title -->
+                                <div class="section-title title-style-center_text">
+                                    <div class="title-header">
+                                        <h3 class="lang" key="get_in">get in touch!</h3>
+                                        <h2 class="title lang" key="question">Have A Question? Drop Us Line!</h2>
+                                    </div>
+                                    <div class="title-desc">
+                                        <p class="lang" key="contact_des">We take great pride in everything that we do, complete control over products allows us to ensure customers receive the best service.</p>
+                                    </div>
+                                </div><!-- section-title end -->
+                            </div>
+                        </div>
+                        <!-- row end -->
+                        <div class="row align-items-center">
+                            <div class="col-lg-8">
+                                <div class="ttm-bgcolor-white p-40 padding_top35 border-rad_5 margin_top15" style="background: #eff3ff;">
+                                    <form asp-action="contact" class="request_qoute_form wrap-form clearfix">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <label class="lang" key="yname">Your Name*</label>
+                                                <span class="text-input"><input asp-for="name" type="text" value="" required="required"></span>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label class="lang" key="yemail">Your Email*</label>
+                                                <span class="text-input"><input asp-for="address" type="text" value="" required="required"></span>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label class="lang" key="phone_number">Phone Number*</label>
+                                                <span class="text-input"><input asp-for="phone" type="text" value="" required="required"></span>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label class="lang" key="c_subject">Subject*</label>
+                                                <span class="text-input"><input asp-for="subject" type="text" value="" required="required"></span>
+                                            </div>
+                                            <div class="col-lg-12">
+                                                <label class="lang" key="message">Message</label>
+                                                <span class="text-input"><textarea asp-for="message" rows="5" required="required"></textarea></span>
+                                            </div>
+                                            <div class="col-lg-12 d-flex justify-content-end">
+                                                <button style="background: #0070cd; border: none;" class="submit ttm-btn ttm-btn-size-md ttm-btn-shape-rounded ttm-btn-style-fill ttm-btn-color-skincolor w-100 margin_top5 lang" key="Submit" type="submit">Submit</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="ttm-bgcolor-white p-30 border-rad_5 margin_top15" style="background: #eff3ff;">
+                                    <!--featured-icon-box-->
+                                    <div class="featured-icon-box icon-align-top-content margin_top0 margin_bottom25">
+                                        <div class="featured-icon">
+                                            <div class="ttm-icon ttm-icon_element-onlytxt ttm-icon_element-color-skincolor ttm-icon_element-size-lg">
+                                                <i class="custom-contact-icon bi bi-envelope-paper-fill"></i>
+                                            </div>
+                                        </div>
+                                        <div class="featured-content pt-2">
+                                            <div class="featured-title">
+                                                <h3 class="margin_bottom0 fs-20 lang" key="lets_call">Let’s Call or Email</h3>
+                                            </div>
+                                            <div class="featured-desc lang" key="sales_email">
+                                                Sales : sales@nwwc.com.sa
+                                            </div>
+                                            <div class="featured-desc lang" key="apply_job">
+                                                Apply Job : info@nwwc.com.sa
+                                            </div>
+                                            <div class="featured-desc lang" key="hotline">
+                                                Hotline : 920002806
+                                            </div>
+                                            <div class="featured-desc lang" key="sales_phone">
+                                                Phone : +966 (11) 2088558
+                                            </div>
+                                            <div class="featured-desc lang" key="fax">
+                                                Fax : +966 (11) 2085584
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- featured-icon-box end-->
+                                    <!--featured-icon-box-->
+                                    <div class="featured-icon-box icon-align-top-content margin_bottom25">
+                                        <div class="featured-icon">
+                                            <div class="ttm-icon ttm-icon_element-onlytxt ttm-icon_element-color-skincolor ttm-icon_element-size-lg">
+                                                <i class="custom-contact-icon bi bi-geo-alt-fill"></i>
+                                            </div>
+                                        </div>
+                                        <div class="featured-content pt-2">
+                                            <div class="featured-title">
+                                                <h3 class="margin_bottom0 fs-20 lang" key="we_here">We Reached Here</h3>
+                                            </div>
+                                            <div class="lang featured-desc" key="contact_address">Address: 14211 Eastern Ring Branch Rd, Ar Rayyan, Riyadh 14211, Saudi Arabia</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- conatct-section end -->
+        <!--- conatact-section -->
+        <section class="mb-5 pb-5 conatact-section clearfix">
+            <div class="container">
+                <!-- row -->
+                <div class="row justify-content-center ttm-boxes-spacing-30px">
+                    <div class="col-md-11 ttm-box-col-wrapper">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14497.994561881525!2d46.7659271!3d24.7097558!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e2f0148724d2a4d%3A0x54069961bac828b5!2z2KfZhNi02LHZg9ipINin2YTZiNi32YbZitipINmE2KPYudmF2KfZhCDYp9mE2YXZitin2Yc!5e0!3m2!1sen!2s!4v1681732617095!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+                <!-- row end -->
+            </div>
+        </section>
+        <!-- conatact-section end -->
+
+
+    </div><!--site-main end-->
+</div>
+
+<script src="js/jquery.js"></script>
+<script>
+    $(window).on("scroll", function () {
+        if (matchMedia('only screen and (min-width: 1200px)').matches) {
+            if ($(window).scrollTop() >= 50) {
+
+                $('.ttm-stickable-header').addClass('fixed-header');
+            } else {
+
+                $('.ttm-stickable-header').removeClass('fixed-header');
+            }
+        }
+    });
+</script>
+

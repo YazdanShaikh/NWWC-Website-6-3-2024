@@ -1,0 +1,932 @@
+﻿
+<link rel="stylesheet" type="text/css" href="css/event.css" />
+
+<link rel="stylesheet" type="text/css" href="css/career.css" />
+
+<script>
+    document.title = '2021 Event || NWWC - National Water Works CO';
+</script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+
+
+
+
+
+<!-- page-title -->
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-11">
+            <div class="ttm-page-title-row ttm-bg ttm-bgimage-yes ttm-bgcolor-darkgrey clearfix custom-event-banner">
+                <div class="ttm-row-wrapper-bg-layer ttm-bg-layer" style="border-radius: 7px;"></div>
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-12">
+                            <div class="ttm-page-title-row-inner">
+                                <div class="page-title-heading">
+                                    <h4 class="title lang" key="event_2021">Our 2021 Events</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- page-title end -->
+<!-- Custom slider -->
+<section class="custom-slider">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-11">
+                <div class="row">
+                    <div class="col-lg-12 px-0">
+                        <div class="custom-height">
+                            <!--2-->
+                            <div id="tab-2" class="tab-content current">
+                                <!--5-->
+                                <div class="row">
+                                    <div class="col-12">
+                                        <h5 class="alignment_solve lang" key="event_2021_head1">Al Eid Ceremon Y  2021</h5>
+                                    </div>
+                                </div>
+                                <div class="row align-items-center">
+                                    <div class="col-md-6">
+                                        <div class="view-box">
+                                            <img src="images/events/2021/one/1.jpg" id="slider_five_main_image" Current="1">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="swiper mySwiper5">
+                                            <div class="swiper-wrapper justify-content-center">
+                                                <div class="s-s">
+                                                    <img src="images/events/2021/one/1.jpg" class="slider_five_image slider_five_image_1" No="1">
+                                                </div>
+                                                <div class="s-s">
+                                                    <img src="images/events/2021/one/2.jpg" class="slider_five_image slider_five_image_2" No="2">
+                                                </div>
+                                                <div class="s-s">
+                                                    <img src="images/events/2021/one/3.jpg" class="slider_five_image slider_five_image_3" No="3">
+                                                </div>
+                                                <div class="s-s">
+                                                    <img src="images/events/2021/one/4.jpg" class="slider_five_image slider_five_image_4" No="4">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://www.thecodeicon.com/js/jquery.js"></script>
+
+<!--tab menu-->
+<script>
+    $(document).ready(function () {
+
+        $('ul.tabs li').click(function () {
+            var tab_id = $(this).attr('data-tab');
+
+            $('ul.tabs li').removeClass('current');
+            $('.tab-content').removeClass('current');
+
+            $(this).addClass('current');
+            $("#" + tab_id).addClass('current');
+        })
+
+    })
+</script>
+
+
+
+<!--one 1-->
+<script>
+    $('.slider_one_image').on('click', function () {
+        $('#slider_one_main_image').attr('src', $(this).attr('src'));
+        $('#slider_one_main_image').attr('Current', $(this).attr('No'));
+        $(this).attr('No');
+    });
+    $('.Slider_One_Arrow_Button').on('click', function () {
+        var task = $(this).attr('Task');
+        var Current = $("#slider_one_main_image").attr('Current');
+        if (task == 1) { find = Current++ + 1; } else { find = Current-- - 1; }
+        var new_image = $('.slider_one_image_' + find).attr('src');
+        // Assign Data
+        $("#slider_one_main_image").attr('Current', find);
+        $("#slider_one_main_image").attr('src', new_image);
+    });
+</script>
+
+
+<!--two 2-->
+<script>
+    $('.slider_two_image').on('click', function () {
+        $('#slider_two_main_image').attr('src', $(this).attr('src'));
+        $('#slider_two_main_image').attr('Current', $(this).attr('No'));
+        $(this).attr('No');
+    });
+    $('.Slider_Two_Arrow_Button').on('click', function () {
+        var task = $(this).attr('Task');
+        var Current = $("#slider_two_main_image").attr('Current');
+        if (task == 1) { find = Current++ + 1; } else { find = Current-- - 1; }
+        var new_image = $('.slider_two_image_' + find).attr('src');
+        // Assign Data
+        $("#slider_two_main_image").attr('Current', find);
+        $("#slider_two_main_image").attr('src', new_image);
+    });
+</script>
+
+
+<!--three 3-->
+<script>
+    $('.slider_three_image').on('click', function () {
+        $('#slider_three_main_image').attr('src', $(this).attr('src'));
+        $('#slider_three_main_image').attr('Current', $(this).attr('No'));
+        $(this).attr('No');
+    });
+    $('.Slider_three_Arrow_Button').on('click', function () {
+        var task = $(this).attr('Task');
+        var Current = $("#slider_three_main_image").attr('Current');
+        if (task == 1) { find = Current++ + 1; } else { find = Current-- - 1; }
+        var new_image = $('.slider_three_image_' + find).attr('src');
+        // Assign Data
+        $("#slider_three_main_image").attr('Current', find);
+        $("#slider_three_main_image").attr('src', new_image);
+    });
+</script>
+
+
+<!--four 4-->
+<script>
+    $('.slider_four_image').on('click', function () {
+        $('#slider_four_main_image').attr('src', $(this).attr('src'));
+        $('#slider_four_main_image').attr('Current', $(this).attr('No'));
+        $(this).attr('No');
+    });
+    $('.Slider_four_Arrow_Button').on('click', function () {
+        var task = $(this).attr('Task');
+        var Current = $("#slider_four_main_image").attr('Current');
+        if (task == 1) { find = Current++ + 1; } else { find = Current-- - 1; }
+        var new_image = $('.slider_four_image_' + find).attr('src');
+        // Assign Data
+        $("#slider_four_main_image").attr('Current', find);
+        $("#slider_four_main_image").attr('src', new_image);
+    });
+</script>
+
+
+
+<!--five 5-->
+<script>
+    $('.slider_five_image').on('click', function () {
+        $('#slider_five_main_image').attr('src', $(this).attr('src'));
+        $('#slider_five_main_image').attr('Current', $(this).attr('No'));
+        $(this).attr('No');
+    });
+    $('.Slider_five_Arrow_Button').on('click', function () {
+        var task = $(this).attr('Task');
+        var Current = $("#slider_five_main_image").attr('Current');
+        if (task == 1) { find = Current++ + 1; } else { find = Current-- - 1; }
+        var new_image = $('.slider_five_image_' + find).attr('src');
+        // Assign Data
+        $("#slider_five_main_image").attr('Current', find);
+        $("#slider_five_main_image").attr('src', new_image);
+    });
+</script>
+
+
+<!--six 6-->
+<script>
+    $('.slider_six_image').on('click', function () {
+        $('#slider_six_main_image').attr('src', $(this).attr('src'));
+        $('#slider_six_main_image').attr('Current', $(this).attr('No'));
+        $(this).attr('No');
+    });
+    $('.Slider_six_Arrow_Button').on('click', function () {
+        var task = $(this).attr('Task');
+        var Current = $("#slider_six_main_image").attr('Current');
+        if (task == 1) { find = Current++ + 1; } else { find = Current-- - 1; }
+        var new_image = $('.slider_six_image_' + find).attr('src');
+        // Assign Data
+        $("#slider_six_main_image").attr('Current', find);
+        $("#slider_six_main_image").attr('src', new_image);
+    });
+</script>
+
+
+<!--seven 7-->
+<script>
+    $('.slider_seven_image').on('click', function () {
+        $('#slider_seven_main_image').attr('src', $(this).attr('src'));
+        $('#slider_seven_main_image').attr('Current', $(this).attr('No'));
+        $(this).attr('No');
+    });
+    $('.Slider_seven_Arrow_Button').on('click', function () {
+        var task = $(this).attr('Task');
+        var Current = $("#slider_seven_main_image").attr('Current');
+        if (task == 1) { find = Current++ + 1; } else { find = Current-- - 1; }
+        var new_image = $('.slider_seven_image_' + find).attr('src');
+        // Assign Data
+        $("#slider_seven_main_image").attr('Current', find);
+        $("#slider_seven_main_image").attr('src', new_image);
+    });
+</script>
+
+
+
+<!--eight 8-->
+<script>
+    $('.slider_eight_image').on('click', function () {
+        $('#slider_eight_main_image').attr('src', $(this).attr('src'));
+        $('#slider_eight_main_image').attr('Current', $(this).attr('No'));
+        $(this).attr('No');
+    });
+    $('.Slider_eight_Arrow_Button').on('click', function () {
+        var task = $(this).attr('Task');
+        var Current = $("#slider_eight_main_image").attr('Current');
+        if (task == 1) { find = Current++ + 1; } else { find = Current-- - 1; }
+        var new_image = $('.slider_eight_image_' + find).attr('src');
+        // Assign Data
+        $("#slider_eight_main_image").attr('Current', find);
+        $("#slider_eight_main_image").attr('src', new_image);
+    });
+</script>
+
+
+
+<!--nine 9-->
+<script>
+    $('.slider_nine_image').on('click', function () {
+        $('#slider_nine_main_image').attr('src', $(this).attr('src'));
+        $('#slider_nine_main_image').attr('Current', $(this).attr('No'));
+        $(this).attr('No');
+    });
+    $('.Slider_nine_Arrow_Button').on('click', function () {
+        var task = $(this).attr('Task');
+        var Current = $("#slider_nine_main_image").attr('Current');
+        if (task == 1) { find = Current++ + 1; } else { find = Current-- - 1; }
+        var new_image = $('.slider_nine_image_' + find).attr('src');
+        // Assign Data
+        $("#slider_nine_main_image").attr('Current', find);
+        $("#slider_nine_main_image").attr('src', new_image);
+    });
+</script>
+
+
+
+<!--ten 10-->
+<script>
+    $('.slider_ten_image').on('click', function () {
+        $('#slider_ten_main_image').attr('src', $(this).attr('src'));
+        $('#slider_ten_main_image').attr('Current', $(this).attr('No'));
+        $(this).attr('No');
+    });
+    $('.Slider_ten_Arrow_Button').on('click', function () {
+        var task = $(this).attr('Task');
+        var Current = $("#slider_ten_main_image").attr('Current');
+        if (task == 1) { find = Current++ + 1; } else { find = Current-- - 1; }
+        var new_image = $('.slider_ten_image_' + find).attr('src');
+        // Assign Data
+        $("#slider_ten_main_image").attr('Current', find);
+        $("#slider_ten_main_image").attr('src', new_image);
+    });
+</script>
+
+
+
+<!--elevn 11-->
+<script>
+    $('.slider_elevn_image').on('click', function () {
+        $('#slider_elevn_main_image').attr('src', $(this).attr('src'));
+        $('#slider_elevn_main_image').attr('Current', $(this).attr('No'));
+        $(this).attr('No');
+    });
+    $('.Slider_elevn_Arrow_Button').on('click', function () {
+        var task = $(this).attr('Task');
+        var Current = $("#slider_elevn_main_image").attr('Current');
+        if (task == 1) { find = Current++ + 1; } else { find = Current-- - 1; }
+        var new_image = $('.slider_elevn_image_' + find).attr('src');
+        // Assign Data
+        $("#slider_elevn_main_image").attr('Current', find);
+        $("#slider_elevn_main_image").attr('src', new_image);
+    });
+</script>
+
+
+
+<!--twelve 12-->
+<script>
+    $('.slider_twelve_image').on('click', function () {
+        $('#slider_twelve_main_image').attr('src', $(this).attr('src'));
+        $('#slider_twelve_main_image').attr('Current', $(this).attr('No'));
+        $(this).attr('No');
+    });
+    $('.Slider_twelve_Arrow_Button').on('click', function () {
+        var task = $(this).attr('Task');
+        var Current = $("#slider_twelve_main_image").attr('Current');
+        if (task == 1) { find = Current++ + 1; } else { find = Current-- - 1; }
+        var new_image = $('.slider_twelve_image_' + find).attr('src');
+        // Assign Data
+        $("#slider_twelve_main_image").attr('Current', find);
+        $("#slider_twelve_main_image").attr('src', new_image);
+    });
+</script>
+
+
+
+<!--thirty 13-->
+<script>
+    $('.slider_thirty_image').on('click', function () {
+        $('#slider_thirty_main_image').attr('src', $(this).attr('src'));
+        $('#slider_thirty_main_image').attr('Current', $(this).attr('No'));
+        $(this).attr('No');
+    });
+    $('.Slider_thirty_Arrow_Button').on('click', function () {
+        var task = $(this).attr('Task');
+        var Current = $("#slider_thirty_main_image").attr('Current');
+        if (task == 1) { find = Current++ + 1; } else { find = Current-- - 1; }
+        var new_image = $('.slider_thirty_image_' + find).attr('src');
+        // Assign Data
+        $("#slider_thirty_main_image").attr('Current', find);
+        $("#slider_thirty_main_image").attr('src', new_image);
+    });
+</script>
+
+
+
+<!--fourty 14-->
+<script>
+    $('.slider_fourty_image').on('click', function () {
+        $('#slider_fourty_main_image').attr('src', $(this).attr('src'));
+        $('#slider_fourty_main_image').attr('Current', $(this).attr('No'));
+        $(this).attr('No');
+    });
+    $('.Slider_fourty_Arrow_Button').on('click', function () {
+        var task = $(this).attr('Task');
+        var Current = $("#slider_fourty_main_image").attr('Current');
+        if (task == 1) { find = Current++ + 1; } else { find = Current-- - 1; }
+        var new_image = $('.slider_fourty_image_' + find).attr('src');
+        // Assign Data
+        $("#slider_fourty_main_image").attr('Current', find);
+        $("#slider_fourty_main_image").attr('src', new_image);
+    });
+</script>
+
+
+
+<!--fivity 15-->
+<script>
+    $('.slider_fivity_image').on('click', function () {
+        $('#slider_fivity_main_image').attr('src', $(this).attr('src'));
+        $('#slider_fivity_main_image').attr('Current', $(this).attr('No'));
+        $(this).attr('No');
+    });
+    $('.Slider_fivity_Arrow_Button').on('click', function () {
+        var task = $(this).attr('Task');
+        var Current = $("#slider_fivity_main_image").attr('Current');
+        if (task == 1) { find = Current++ + 1; } else { find = Current-- - 1; }
+        var new_image = $('.slider_fivity_image_' + find).attr('src');
+        // Assign Data
+        $("#slider_fivity_main_image").attr('Current', find);
+        $("#slider_fivity_main_image").attr('src', new_image);
+    });
+</script>
+
+
+
+<!--sixty 16-->
+<script>
+    $('.slider_sixty_image').on('click', function () {
+        $('#slider_sixty_main_image').attr('src', $(this).attr('src'));
+        $('#slider_sixty_main_image').attr('Current', $(this).attr('No'));
+        $(this).attr('No');
+    });
+    $('.Slider_sixty_Arrow_Button').on('click', function () {
+        var task = $(this).attr('Task');
+        var Current = $("#slider_sixty_main_image").attr('Current');
+        if (task == 1) { find = Current++ + 1; } else { find = Current-- - 1; }
+        var new_image = $('.slider_sixty_image_' + find).attr('src');
+        // Assign Data
+        $("#slider_sixty_main_image").attr('Current', find);
+        $("#slider_sixty_main_image").attr('src', new_image);
+    });
+</script>
+
+
+<!--sevety 17-->
+<script>
+    $('.slider_sevety_image').on('click', function () {
+        $('#slider_sevety_main_image').attr('src', $(this).attr('src'));
+        $('#slider_sevety_main_image').attr('Current', $(this).attr('No'));
+        $(this).attr('No');
+    });
+    $('.Slider_sevety_Arrow_Button').on('click', function () {
+        var task = $(this).attr('Task');
+        var Current = $("#slider_sevety_main_image").attr('Current');
+        if (task == 1) { find = Current++ + 1; } else { find = Current-- - 1; }
+        var new_image = $('.slider_sevety_image_' + find).attr('src');
+        // Assign Data
+        $("#slider_sevety_main_image").attr('Current', find);
+        $("#slider_sevety_main_image").attr('src', new_image);
+    });
+</script>
+
+
+
+<!--eighty 18-->
+<script>
+    $('.slider_eighty_image').on('click', function () {
+        $('#slider_eighty_main_image').attr('src', $(this).attr('src'));
+        $('#slider_eighty_main_image').attr('Current', $(this).attr('No'));
+        $(this).attr('No');
+    });
+    $('.Slider_eighty_Arrow_Button').on('click', function () {
+        var task = $(this).attr('Task');
+        var Current = $("#slider_eighty_main_image").attr('Current');
+        if (task == 1) { find = Current++ + 1; } else { find = Current-- - 1; }
+        var new_image = $('.slider_eighty_image_' + find).attr('src');
+        // Assign Data
+        $("#slider_eighty_main_image").attr('Current', find);
+        $("#slider_eighty_main_image").attr('src', new_image);
+    });
+</script>
+
+
+
+<!--ninety 19-->
+<script>
+    $('.slider_ninety_image').on('click', function () {
+        $('#slider_ninety_main_image').attr('src', $(this).attr('src'));
+        $('#slider_ninety_main_image').attr('Current', $(this).attr('No'));
+        $(this).attr('No');
+    });
+    $('.Slider_ninety_Arrow_Button').on('click', function () {
+        var task = $(this).attr('Task');
+        var Current = $("#slider_ninety_main_image").attr('Current');
+        if (task == 1) { find = Current++ + 1; } else { find = Current-- - 1; }
+        var new_image = $('.slider_ninety_image_' + find).attr('src');
+        // Assign Data
+        $("#slider_ninety_main_image").attr('Current', find);
+        $("#slider_ninety_main_image").attr('src', new_image);
+    });
+</script>
+
+
+
+<!--twoty 20-->
+<script>
+    $('.slider_twoty_image').on('click', function () {
+        $('#slider_twoty_main_image').attr('src', $(this).attr('src'));
+        $('#slider_twoty_main_image').attr('Current', $(this).attr('No'));
+        $(this).attr('No');
+    });
+    $('.Slider_twoty_Arrow_Button').on('click', function () {
+        var task = $(this).attr('Task');
+        var Current = $("#slider_twoty_main_image").attr('Current');
+        if (task == 1) { find = Current++ + 1; } else { find = Current-- - 1; }
+        var new_image = $('.slider_twoty_image_' + find).attr('src');
+        // Assign Data
+        $("#slider_twoty_main_image").attr('Current', find);
+        $("#slider_twoty_main_image").attr('src', new_image);
+    });
+</script>
+
+
+
+<!--twoone 21-->
+<script>
+    $('.slider_twoone_image').on('click', function () {
+        $('#slider_twoone_main_image').attr('src', $(this).attr('src'));
+        $('#slider_twoone_main_image').attr('Current', $(this).attr('No'));
+        $(this).attr('No');
+    });
+    $('.Slider_twoone_Arrow_Button').on('click', function () {
+        var task = $(this).attr('Task');
+        var Current = $("#slider_twoone_main_image").attr('Current');
+        if (task == 1) { find = Current++ + 1; } else { find = Current-- - 1; }
+        var new_image = $('.slider_twoone_image_' + find).attr('src');
+        // Assign Data
+        $("#slider_twoone_main_image").attr('Current', find);
+        $("#slider_twoone_main_image").attr('src', new_image);
+    });
+</script>
+
+
+
+<!--twotwo 22-->
+<script>
+    $('.slider_twotwo_image').on('click', function () {
+        $('#slider_twotwo_main_image').attr('src', $(this).attr('src'));
+        $('#slider_twotwo_main_image').attr('Current', $(this).attr('No'));
+        $(this).attr('No');
+    });
+    $('.Slider_twotwo_Arrow_Button').on('click', function () {
+        var task = $(this).attr('Task');
+        var Current = $("#slider_twotwo_main_image").attr('Current');
+        if (task == 1) { find = Current++ + 1; } else { find = Current-- - 1; }
+        var new_image = $('.slider_twotwo_image_' + find).attr('src');
+        // Assign Data
+        $("#slider_twotwo_main_image").attr('Current', find);
+        $("#slider_twotwo_main_image").attr('src', new_image);
+    });
+</script>
+
+
+
+<!--twothree 23-->
+<script>
+    $('.slider_twothree_image').on('click', function () {
+        $('#slider_twothree_main_image').attr('src', $(this).attr('src'));
+        $('#slider_twothree_main_image').attr('Current', $(this).attr('No'));
+        $(this).attr('No');
+    });
+    $('.Slider_twothree_Arrow_Button').on('click', function () {
+        var task = $(this).attr('Task');
+        var Current = $("#slider_twothree_main_image").attr('Current');
+        if (task == 1) { find = Current++ + 1; } else { find = Current-- - 1; }
+        var new_image = $('.slider_twothree_image_' + find).attr('src');
+        // Assign Data
+        $("#slider_twothree_main_image").attr('Current', find);
+        $("#slider_twothree_main_image").attr('src', new_image);
+    });
+</script>
+
+
+
+
+<!--twofour 24-->
+<script>
+    $('.slider_twofour_image').on('click', function () {
+        $('#slider_twofour_main_image').attr('src', $(this).attr('src'));
+        $('#slider_twofour_main_image').attr('Current', $(this).attr('No'));
+        $(this).attr('No');
+    });
+    $('.Slider_twofour_Arrow_Button').on('click', function () {
+        var task = $(this).attr('Task');
+        var Current = $("#slider_twofour_main_image").attr('Current');
+        if (task == 1) { find = Current++ + 1; } else { find = Current-- - 1; }
+        var new_image = $('.slider_twofour_image_' + find).attr('src');
+        // Assign Data
+        $("#slider_twofour_main_image").attr('Current', find);
+        $("#slider_twofour_main_image").attr('src', new_image);
+    });
+</script>
+
+
+
+
+<!--twofive 25-->
+<script>
+    $('.slider_twofive_image').on('click', function () {
+        $('#slider_twofive_main_image').attr('src', $(this).attr('src'));
+        $('#slider_twofive_main_image').attr('Current', $(this).attr('No'));
+        $(this).attr('No');
+    });
+    $('.Slider_twofive_Arrow_Button').on('click', function () {
+        var task = $(this).attr('Task');
+        var Current = $("#slider_twofive_main_image").attr('Current');
+        if (task == 1) { find = Current++ + 1; } else { find = Current-- - 1; }
+        var new_image = $('.slider_twofive_image_' + find).attr('src');
+        // Assign Data
+        $("#slider_twofive_main_image").attr('Current', find);
+        $("#slider_twofive_main_image").attr('src', new_image);
+    });
+</script>
+
+
+
+
+
+
+
+<!--twosix 26-->
+<script>
+    $('.slider_twosix_image').on('click', function () {
+        $('#slider_twosix_main_image').attr('src', $(this).attr('src'));
+        $('#slider_twosix_main_image').attr('Current', $(this).attr('No'));
+        $(this).attr('No');
+    });
+    $('.Slider_twosix_Arrow_Button').on('click', function () {
+        var task = $(this).attr('Task');
+        var Current = $("#slider_twosix_main_image").attr('Current');
+        if (task == 1) { find = Current++ + 1; } else { find = Current-- - 1; }
+        var new_image = $('.slider_twosix_image_' + find).attr('src');
+        // Assign Data
+        $("#slider_twosix_main_image").attr('Current', find);
+        $("#slider_twosix_main_image").attr('src', new_image);
+    });
+</script>
+
+
+
+
+
+<!--twoseven 27-->
+<script>
+    $('.slider_twoseven_image').on('click', function () {
+        $('#slider_twoseven_main_image').attr('src', $(this).attr('src'));
+        $('#slider_twoseven_main_image').attr('Current', $(this).attr('No'));
+        $(this).attr('No');
+    });
+    $('.Slider_twoseven_Arrow_Button').on('click', function () {
+        var task = $(this).attr('Task');
+        var Current = $("#slider_twoseven_main_image").attr('Current');
+        if (task == 1) { find = Current++ + 1; } else { find = Current-- - 1; }
+        var new_image = $('.slider_twoseven_image_' + find).attr('src');
+        // Assign Data
+        $("#slider_twoseven_main_image").attr('Current', find);
+        $("#slider_twoseven_main_image").attr('src', new_image);
+    });
+</script>
+
+
+
+
+<!--twoeight 28-->
+<script>
+    $('.slider_twoeight_image').on('click', function () {
+        $('#slider_twoeight_main_image').attr('src', $(this).attr('src'));
+        $('#slider_twoeight_main_image').attr('Current', $(this).attr('No'));
+        $(this).attr('No');
+    });
+    $('.Slider_twoeight_Arrow_Button').on('click', function () {
+        var task = $(this).attr('Task');
+        var Current = $("#slider_twoeight_main_image").attr('Current');
+        if (task == 1) { find = Current++ + 1; } else { find = Current-- - 1; }
+        var new_image = $('.slider_twoeight_image_' + find).attr('src');
+        // Assign Data
+        $("#slider_twoeight_main_image").attr('Current', find);
+        $("#slider_twoeight_main_image").attr('src', new_image);
+    });
+</script>
+
+
+
+
+<!--twonine 29-->
+<script>
+    $('.slider_twonine_image').on('click', function () {
+        $('#slider_twonine_main_image').attr('src', $(this).attr('src'));
+        $('#slider_twonine_main_image').attr('Current', $(this).attr('No'));
+        $(this).attr('No');
+    });
+    $('.Slider_twonine_Arrow_Button').on('click', function () {
+        var task = $(this).attr('Task');
+        var Current = $("#slider_twonine_main_image").attr('Current');
+        if (task == 1) { find = Current++ + 1; } else { find = Current-- - 1; }
+        var new_image = $('.slider_twonine_image_' + find).attr('src');
+        // Assign Data
+        $("#slider_twonine_main_image").attr('Current', find);
+        $("#slider_twonine_main_image").attr('src', new_image);
+    });
+</script>
+
+
+
+
+
+<!--threety 30-->
+<script>
+    $('.slider_threety_image').on('click', function () {
+        $('#slider_threety_main_image').attr('src', $(this).attr('src'));
+        $('#slider_threety_main_image').attr('Current', $(this).attr('No'));
+        $(this).attr('No');
+    });
+    $('.Slider_threety_Arrow_Button').on('click', function () {
+        var task = $(this).attr('Task');
+        var Current = $("#slider_threety_main_image").attr('Current');
+        if (task == 1) { find = Current++ + 1; } else { find = Current-- - 1; }
+        var new_image = $('.slider_threety_image_' + find).attr('src');
+        // Assign Data
+        $("#slider_threety_main_image").attr('Current', find);
+        $("#slider_threety_main_image").attr('src', new_image);
+    });
+</script>
+
+
+
+
+<!--threeone 31-->
+<script>
+    $('.slider_threeone_image').on('click', function () {
+        $('#slider_threeone_main_image').attr('src', $(this).attr('src'));
+        $('#slider_threeone_main_image').attr('Current', $(this).attr('No'));
+        $(this).attr('No');
+    });
+    $('.Slider_threeone_Arrow_Button').on('click', function () {
+        var task = $(this).attr('Task');
+        var Current = $("#slider_threeone_main_image").attr('Current');
+        if (task == 1) { find = Current++ + 1; } else { find = Current-- - 1; }
+        var new_image = $('.slider_threeone_image_' + find).attr('src');
+        // Assign Data
+        $("#slider_threeone_main_image").attr('Current', find);
+        $("#slider_threeone_main_image").attr('src', new_image);
+    });
+</script>
+
+
+
+
+
+
+
+<!--threetwo 32-->
+<script>
+    $('.slider_threetwo_image').on('click', function () {
+        $('#slider_threetwo_main_image').attr('src', $(this).attr('src'));
+        $('#slider_threetwo_main_image').attr('Current', $(this).attr('No'));
+        $(this).attr('No');
+    });
+    $('.Slider_threetwo_Arrow_Button').on('click', function () {
+        var task = $(this).attr('Task');
+        var Current = $("#slider_threetwo_main_image").attr('Current');
+        if (task == 1) { find = Current++ + 1; } else { find = Current-- - 1; }
+        var new_image = $('.slider_threetwo_image_' + find).attr('src');
+        // Assign Data
+        $("#slider_threetwo_main_image").attr('Current', find);
+        $("#slider_threetwo_main_image").attr('src', new_image);
+    });
+</script>
+
+
+
+
+
+<!--threethree 33-->
+<script>
+    $('.slider_threethree_image').on('click', function () {
+        $('#slider_threethree_main_image').attr('src', $(this).attr('src'));
+        $('#slider_threethree_main_image').attr('Current', $(this).attr('No'));
+        $(this).attr('No');
+    });
+    $('.Slider_threethree_Arrow_Button').on('click', function () {
+        var task = $(this).attr('Task');
+        var Current = $("#slider_threethree_main_image").attr('Current');
+        if (task == 1) { find = Current++ + 1; } else { find = Current-- - 1; }
+        var new_image = $('.slider_threethree_image_' + find).attr('src');
+        // Assign Data
+        $("#slider_threethree_main_image").attr('Current', find);
+        $("#slider_threethree_main_image").attr('src', new_image);
+    });
+</script>
+
+
+
+
+<!--threefour 34-->
+<script>
+    $('.slider_threefour_image').on('click', function () {
+        $('#slider_threefour_main_image').attr('src', $(this).attr('src'));
+        $('#slider_threefour_main_image').attr('Current', $(this).attr('No'));
+        $(this).attr('No');
+    });
+    $('.Slider_threefour_Arrow_Button').on('click', function () {
+        var task = $(this).attr('Task');
+        var Current = $("#slider_threefour_main_image").attr('Current');
+        if (task == 1) { find = Current++ + 1; } else { find = Current-- - 1; }
+        var new_image = $('.slider_threefour_image_' + find).attr('src');
+        // Assign Data
+        $("#slider_threefour_main_image").attr('Current', find);
+        $("#slider_threefour_main_image").attr('src', new_image);
+    });
+</script>
+
+
+
+
+<!--threefive 35-->
+<script>
+    $('.slider_threefive_image').on('click', function () {
+        $('#slider_threefive_main_image').attr('src', $(this).attr('src'));
+        $('#slider_threefive_main_image').attr('Current', $(this).attr('No'));
+        $(this).attr('No');
+    });
+    $('.Slider_threefive_Arrow_Button').on('click', function () {
+        var task = $(this).attr('Task');
+        var Current = $("#slider_threefive_main_image").attr('Current');
+        if (task == 1) { find = Current++ + 1; } else { find = Current-- - 1; }
+        var new_image = $('.slider_threefive_image_' + find).attr('src');
+        // Assign Data
+        $("#slider_threefive_main_image").attr('Current', find);
+        $("#slider_threefive_main_image").attr('src', new_image);
+    });
+</script>
+
+
+
+
+<!--threesix 36-->
+<script>
+    $('.slider_threesix_image').on('click', function () {
+        $('#slider_threesix_main_image').attr('src', $(this).attr('src'));
+        $('#slider_threesix_main_image').attr('Current', $(this).attr('No'));
+        $(this).attr('No');
+    });
+    $('.Slider_threesix_Arrow_Button').on('click', function () {
+        var task = $(this).attr('Task');
+        var Current = $("#slider_threesix_main_image").attr('Current');
+        if (task == 1) { find = Current++ + 1; } else { find = Current-- - 1; }
+        var new_image = $('.slider_threesix_image_' + find).attr('src');
+        // Assign Data
+        $("#slider_threesix_main_image").attr('Current', find);
+        $("#slider_threesix_main_image").attr('src', new_image);
+    });
+</script>
+
+
+
+
+<!--threeseven 37-->
+<script>
+    $('.slider_threeseven_image').on('click', function () {
+        $('#slider_threeseven_main_image').attr('src', $(this).attr('src'));
+        $('#slider_threeseven_main_image').attr('Current', $(this).attr('No'));
+        $(this).attr('No');
+    });
+    $('.Slider_threeseven_Arrow_Button').on('click', function () {
+        var task = $(this).attr('Task');
+        var Current = $("#slider_threeseven_main_image").attr('Current');
+        if (task == 1) { find = Current++ + 1; } else { find = Current-- - 1; }
+        var new_image = $('.slider_threeseven_image_' + find).attr('src');
+        // Assign Data
+        $("#slider_threeseven_main_image").attr('Current', find);
+        $("#slider_threeseven_main_image").attr('src', new_image);
+    });
+</script>
+
+
+
+
+<!--threeeight 38-->
+<script>
+    $('.slider_threeeight_image').on('click', function () {
+        $('#slider_threeeight_main_image').attr('src', $(this).attr('src'));
+        $('#slider_threeeight_main_image').attr('Current', $(this).attr('No'));
+        $(this).attr('No');
+    });
+    $('.Slider_threeeight_Arrow_Button').on('click', function () {
+        var task = $(this).attr('Task');
+        var Current = $("#slider_threeeight_main_image").attr('Current');
+        if (task == 1) { find = Current++ + 1; } else { find = Current-- - 1; }
+        var new_image = $('.slider_threeeight_image_' + find).attr('src');
+        // Assign Data
+        $("#slider_threeeight_main_image").attr('Current', find);
+        $("#slider_threeeight_main_image").attr('src', new_image);
+    });
+</script>
+
+
+
+
+<!--threenine 39-->
+<script>
+    $('.slider_threenine_image').on('click', function () {
+        $('#slider_threenine_main_image').attr('src', $(this).attr('src'));
+        $('#slider_threenine_main_image').attr('Current', $(this).attr('No'));
+        $(this).attr('No');
+    });
+    $('.Slider_threenine_Arrow_Button').on('click', function () {
+        var task = $(this).attr('Task');
+        var Current = $("#slider_threenine_main_image").attr('Current');
+        if (task == 1) { find = Current++ + 1; } else { find = Current-- - 1; }
+        var new_image = $('.slider_threenine_image_' + find).attr('src');
+        // Assign Data
+        $("#slider_threenine_main_image").attr('Current', find);
+        $("#slider_threenine_main_image").attr('src', new_image);
+    });
+</script>

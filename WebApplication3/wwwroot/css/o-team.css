@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+.team{padding-bottom:70px;font-family:'Poppins', sans-serif}
+.team .section-title{text-align:left;margin-bottom:50px}
+.team__item{height:480px;position:relative;z-index:1;margin-bottom:30px;overflow:hidden;background-position:center !important;background-size:cover !important;border-radius:5px;}
+.team__item:after{position:absolute;left:0;top:0;height:100%;width:100%;background:rgb(29 42 77 / 85%);content:"";z-index:-1;opacity:0;-webkit-transition:all,0.5s,ease-out,.5s;-o-transition:all,0.5s,ease-out,.5s;transition:all,0.5s,ease-out,.5s}
+.team__item:hover:after{opacity:1}
+.team__item:hover .team__text{top:0}
+.team__item:hover .team__text .team__title{border-bottom:1px solid rgba(183,183,183,0.2);padding:0 0 26px;margin-bottom:26px;opacity:0;visibility:hidden;position:relative;bottom:initial;opacity:1;visibility:visible}
+.team__item:hover .team__text p{top:0;opacity:1;visibility:visible;-webkit-transition:all .5s ease .3s;-o-transition:all .5s ease .3s;transition:all .5s ease .3s}
+.team__item:hover .team__text .team__social{opacity:1;visibility:visible;bottom:34px;-webkit-transition:all .5s ease .5s;-o-transition:all .5s ease .5s;transition:all .5s ease .5s}
+.team__text{height:100%;top:361px;position:relative;padding:35px 30px 30px;-webkit-transition:.5s;-o-transition:.5s;transition:.5s}
+.team__text .team__title{border-bottom:1px solid rgba(183,183,183,0.2);padding:0 0 26px;margin-bottom:26px;position:relative}
+.team__text .team__title h4{color:#1d2a4d;font-size:18px;font-weight:700;margin-bottom:6px;line-height:20px;}
+.team__text .team__title span{font-size:15px;color:#fff}
+.team__text p{color:#fff !important;line-height:19px;opacity:0;visibility:hidden;position:relative;top:50px;-webkit-transition:all .3s;-o-transition:all .3s;transition:all .3s}
+.team__text .team__social{position:absolute;left:0;width:100%;padding:0 30px;bottom:0;opacity:0;visibility:hidden}
+.team__text .team__social a{display:inline-block;font-size:20px;color:#fff;margin-right:34px;-webkit-transition:all,.3s;-o-transition:all,.3s;transition:all,.3s}
+.team__text .team__social a:last-child{margin-right:0}
+.team__text .team__social a:hover{color:#0070cd}
+@media(max-width:768px) {
+  .team__item{height:350px}
+  .team__text{padding:25px 20px 20px}
+}
+.custom-team-banner{
+  background: url(../images/management.jpg) no-repeat !important;
+  background-size: cover !important;
+  margin-top: 78px;
+  border-radius: 7px;
+  background-position: center !important;
+}
+@media (max-width: 1200px) {
+  .custom-contact,
+  .custom-career,
+  .our-company,
+  .custom-project-banner,
+  .custom-app-banner,
+  .custom-parent-banner,
+  .custom-what-banner,
+  .custom-team-banner{
+      margin-top: 0px !important;
+  }
+}
+
+.team__item h4{
+color: #fff !important;
+}
+
+.c-h2{
+  line-height: 30px !important;
+  margin-top: 40px;
+}
+
+.team__item2{
+  height :300px;
+}
+
+.team_text2{
+    top: 0;
+}
+
+.line1{
+    position: relative;
+}
+
+.line1::after{
+    position: absolute;
+    width: 200px;
+    height: 2px;
+    background: grey;
+    content: "";
+    right: -200px;
+    top: 330px;
+    /*transform: translateY(-50%);*/
+}
+
+.line1::before{
+    position: absolute;
+    width: 2px;
+    height: 200px;
+    background: grey;
+    content: "";
+    right: -200px;
+    top: 330px;
+    /*transform: translateY(-50%);*/
+}
+
+.line2{
+    position: relative;
+}
+
+.line2::after{
+    position: absolute;
+    width: 200px;
+    height: 2px;
+    background: grey;
+    content: "";
+    right: -200px;
+    top: 330px;
+    /*transform: translateY(-50%);*/
+}
+
+.line2::before{
+    position: absolute;
+    width: 2px;
+    height: 200px;
+    background: grey;
+    content: "";
+    right: -200px;
+    top: 330px;
+    /*transform: translateY(-50%);*/
+}
+
+
+
+@media (max-width: 991px) {
+    /*.line1::before,*/
+    /*.line1::after,*/
+    /*.line2::before,*/
+    /*.line2::after{*/
+    /*    display: none;*/
+    /*}*/
+    
+    .line2::after{
+        position: absolute;
+        width: 200px;
+        height: 2px;
+        background: grey;
+        content: "";
+        left: -200px;
+        top: 330px;
+        /*transform: translateY(-50%);*/
+    }
+    
+    .line2::before{
+        position: absolute;
+        width: 2px;
+        height: 200px;
+        background: grey;
+        content: "";
+        left: -200px;
+        top: 330px;
+        /*transform: translateY(-50%);*/
+    }
+}
+
+
+
+
+@media (max-width: 767px) {
+    .line1::before,
+    .line1::after,
+    .line2::before,
+    .line2::after{
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

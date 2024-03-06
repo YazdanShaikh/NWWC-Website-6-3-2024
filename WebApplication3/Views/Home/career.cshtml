@@ -1,0 +1,131 @@
+﻿
+
+<link rel="stylesheet" type="text/css" href="css/career.css" />
+
+<link rel="stylesheet" type="text/css" href="css/faq.css" />
+
+<script>
+    document.title = 'Career || NWWC - National Water Works CO';
+</script>
+<div class="blue-pattern">
+    <!-- page-title -->
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-11">
+                <div class="ttm-page-title-row ttm-bg ttm-bgimage-yes ttm-bgcolor-darkgrey clearfix custom-career">
+                    <div class="ttm-row-wrapper-bg-layer ttm-bg-layer" style="border-radius: 8px;"> </div>
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <div class="col-lg-12">
+                                <div class="ttm-page-title-row-inner">
+                                    <div class="page-title-heading">
+                                        <h4 class="title lang" key="career">Career</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- page-title end -->
+    <!--site-main start-->
+    <div class="site-main">
+
+
+        <!-- conatct-section -->
+        <section class="pb-5 mb-5 conatct-section ttm-bgcolor-grey clearfix">
+            <div class="container career">
+                <div class="row justify-content-center">
+                    <div class="col-md-11">
+                        <div class="boxaccordion">
+                            <div class="containerwidth">
+                                @{
+                                    if (Model != null)
+                                    {
+                                        @foreach (var Data in Model)
+                                        {
+                                            <div class="wrapper">
+                                                <button class="toggle" key="website_developer">@Data.title<i class="bi bi-plus-lg icon"></i></button>
+                                                <div class="content">
+                                                    <section class="custom_mission_view">
+                                                        <div class="container">
+                                                            <div class="row">
+                                                                <div class="col-12">
+                                                                    <p class="text-light" key="hiring">@Data.description</p>
+                                                                    <a href="/applyform" style="background: #0070cd !important; border-color: #0070cd;" class="drop-in px-3 py-2 ttm-btn ttm-btn-size-md ttm-btn-style-fill ttm-btn-shape-rounded ttm-btn-color-dark lang" key="apply">Apply</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </section>
+                                                </div>
+                                            </div>
+                                        }
+
+                                    }
+                                }
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- conatct-section end -->
+
+
+    </div><!--site-main end-->
+</div>
+
+
+<script src="js/jquery.js"></script>
+<script>
+    $(window).on("scroll", function () {
+        if (matchMedia('only screen and (min-width: 1200px)').matches) {
+            if ($(window).scrollTop() >= 50) {
+
+                $('.ttm-stickable-header').addClass('fixed-header');
+            } else {
+
+                $('.ttm-stickable-header').removeClass('fixed-header');
+            }
+        }
+    });
+
+    $('#career').addClass('header-mennu-active');
+</script>
+
+
+
+
+<script>
+    //<![CDATA[
+    let toggles = document.getElementsByClassName("toggle");
+    let contentDiv = document.getElementsByClassName("content");
+    let icons = document.getElementsByClassName("icon");
+
+    for (let i = 0; i < toggles.length; i++) {
+        toggles[i].addEventListener("click", () => {
+            if (parseInt(contentDiv[i].style.height) != contentDiv[i].scrollHeight) {
+                contentDiv[i].style.height = contentDiv[i].scrollHeight + "px";
+                toggles[i].style.color = "#fff";
+                icons[i].classList.remove("bi-plus-lg");
+                icons[i].classList.add("bi-dash");
+            } else {
+                contentDiv[i].style.height = "0px";
+                toggles[i].style.color = "#fff";
+                icons[i].classList.remove("bi-dash");
+                icons[i].classList.add("bi-plus-lg");
+            }
+
+            for (let j = 0; j < contentDiv.length; j++) {
+                if (j !== i) {
+                    contentDiv[j].style.height = 0;
+                    toggles[j].style.color = "#fff";
+                    icons[j].classList.remove("bi-dash");
+                    icons[j].classList.add("bi-plus-lg");
+                }
+            }
+        });
+    }
+</script>

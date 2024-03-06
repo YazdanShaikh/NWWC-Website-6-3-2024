@@ -1,0 +1,111 @@
+﻿
+
+
+<script>
+    document.title = 'Corporate Activities & Knowledge Transfer || NWWC - National Water Works CO';
+</script>
+
+
+<link rel="stylesheet" type="text/css" href="css/career.css" />
+
+<div class="blue-pattern">
+
+
+
+     
+    <section class="new_showroom">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-11 my-5 py-5">
+                    <video class="rounded w-100" src="images/new_show.mp4" loop autoplay muted></video>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="new_multi_vi">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-11">
+                    <div class="row">
+                        <div class="col-md-4 col-sm-6 my-4">
+                            <video class="rounded w-100 add_v" onclick="myFunction(this);" title="NWWC Movie English" src="images/videos/1.mp4" data-toggle="modal" data-target="#exampleModalCenterVideo" loop autoplay muted></video>
+                            <h4 class="lang" key="video1">NWWC Movie English</h4>
+                        </div>
+                        <div class="col-md-4 col-sm-6 my-4">
+                            <video class="rounded w-100 add_v" onclick="myFunction(this);" title="NWWC Movie Arabic" src="images/videos/2.mp4" data-toggle="modal" data-target="#exampleModalCenterVideo" loop autoplay muted></video>
+                            <h4 class ="lang" key="video2">NWWC Movie Arabic</h4>
+                        </div>
+                        <div class="col-md-4 col-sm-6 my-4">
+                            <video class="rounded w-100 add_v" onclick="myFunction(this);" title="NWWC New Building" src="images/videos/3.mp4" data-toggle="modal" data-target="#exampleModalCenterVideo" loop autoplay muted></video>
+                            <h4 class="lang" key="video3">NWWC New Building</h4>
+                        </div>
+                        <div class="col-sm-6 my-4">
+                            <video class="rounded w-100 add_v" onclick="myFunction(this);" title="Saad Project" src="images/videos/4.mp4" data-toggle="modal" data-target="#exampleModalCenterVideo" loop autoplay muted></video>
+                            <h4 class="lang" key="video4">Saad Project</h4>
+                        </div>
+                        <div class="col-sm-6 my-4">
+                            <video class="rounded w-100 add_v" onclick="myFunction(this);" title="Saudi build Exhibition" src="images/videos/5.mp4" data-toggle="modal" data-target="#exampleModalCenterVideo" loop autoplay muted></video>
+                            <h4 class="lang" key="video5">Saudi build Exhibition</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <script src="https://www.thecodeicon.com/js/jquery.js"></script>
+
+    <script>
+        $(window).on("scroll", function () {
+            if (matchMedia('only screen and (min-width: 1200px)').matches) {
+                if ($(window).scrollTop() >= 50) {
+                    $('.ttm-stickable-header').addClass('fixed-header');
+                } else {
+                    $('.ttm-stickable-header').removeClass('fixed-header');
+                }
+            }
+        });
+        $('#blogs').addClass('header-mennu-active');
+    </script>
+
+
+   
+
+
+    <script>
+        function myFunction(imgs) {
+            var expandImg = document.getElementById("expandedImg");
+            var imgText = document.getElementById("imgtext");
+            expandImg.src = imgs.src;
+            imgText.innerHTML = imgs.title;
+            expandImg.parentElement.style.display = "block";
+        }
+    </script>
+
+
+    <style>
+        .modal-backdrop {
+            display: none;
+        }
+    </style>
+
+
+    <div class="modal fade" id="exampleModalCenterVideo" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog new_videos modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="imgtext"></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <video class="rounded w-100" src="" id="expandedImg" controls loop autoplay muted></video>
+                </div>
+            </div>
+        </div>
+    </div>

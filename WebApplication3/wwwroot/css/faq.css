@@ -1,0 +1,71 @@
+.containerwidth {
+    width: 100%;
+}
+
+.boxaccordion{
+    border-top: 2px solid #ebebeb;
+    margin-top: 40px;
+    border-radius :5px;
+    margin-bottom: 100px;
+    /* padding: 40px 15px 37px 15px; */
+    /* background: linear-gradient(to right, rgb(0, 0, 0, 0.4), rgb(0, 0, 0, 0.4)), url(../images/11bg.jpg) no-repeat center; */
+    background-size: cover;
+}
+
+.wrapper {
+    background-color: #00000085;
+    padding: 18px 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    /*background: linear-gradient(to right, rgb(0, 0, 0, 0.6), rgb(0, 0, 0, 0.6)), url(../images/events/2009/one/1.jpg) no-repeat center;*/
+    background-size: cover;
+}
+
+/*.wrapper2{*/
+/*    background: linear-gradient(to right, rgb(0, 0, 0, 0.6), rgb(0, 0, 0, 0.6)), url(../images/events/2014/four/1.JPG) no-repeat center;*/
+/*    background-size: cover;*/
+/*}*/
+
+/*.wrapper3{*/
+/*    background: linear-gradient(to right, rgb(0, 0, 0, 0.6), rgb(0, 0, 0, 0.6)), url(../images/events/2014/seven/1.JPG) no-repeat center;*/
+/*    background-size: cover;*/
+/*}*/
+
+.toggle,
+.content {
+    font-family: "Poppins", sans-serif;
+}
+
+.toggle {
+    width: 100%;
+    background-color: transparent;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 600;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 10px 0;
+}
+.content {
+    position: relative;
+    font-size: 14px;
+    text-align: justify;
+    line-height: 30px;
+    height: 0;
+    overflow: hidden;
+    color: #fff;
+    -webkit-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+}
